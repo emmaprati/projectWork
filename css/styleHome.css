@@ -1,0 +1,172 @@
+* {
+  background-color: #101728;
+  font-family: 'codec pro extrabold';
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: 'codec pro extrabold';
+  src: url('../font/Codec Pro ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.intestazione {
+  display: flex;
+  align-content: space-between;
+}
+
+.int-logo {
+  margin-left: 20px;
+  margin-top: 10px;
+  position: relative;
+  /* Necessario per posizionare il bagliore */
+}
+
+.int-title {
+  margin: 20px 0px 0px 20px;
+  font-size: 40px;
+  color: white;
+}
+
+#int-bottoni {
+  margin-left: auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 10%;
+}
+
+.main-title {
+  margin: 80px 0px 0px 150px;
+  font-size: 100px;
+  color: white;
+}
+
+.main-logo {
+  margin-right: 150px;
+  position: relative;
+}
+
+
+.login,
+.signup,
+.info {
+  align-items: center;
+  background-color: #2f318b;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 599;
+  justify-content: center;
+  line-height: 20px;
+  width: 115px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.signup {
+  margin: 20px 15px 0px 20px;
+}
+
+.login {
+  margin: 20px 0px 0px 20px;
+}
+
+.btn-info {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.info {
+  font-size: 1.2em;
+  padding: 15px 30px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4d4bff, #6a67ff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  animation: slide-up 1.4s ease-out;
+  box-shadow: 0 0 15px #4d4bff, 0 0 30px #4d4bff;
+}
+
+
+.info:hover,
+.login:hover,
+.signup:hover {
+  background: linear-gradient(135deg, #6a67ff, #4d4bff);
+  transform: scale(1.05);
+}
+
+.info {
+  margin-left: 16%;
+  width: 250px;
+  height: 70px;
+  font-size: 24px;
+  padding: 25px 25px 25px 25px;
+}
+
+.introduzione {
+  display: flex;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  margin-top: 380px;
+}
+
+.info-introduzione {
+  display: flex;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 150px;
+}
+
+
+
+.login:disabled,
+.signup:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+#viola {
+  color: #9340ff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Sposta il testo verso il basso */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Testo torna nella posizione originale */
+  }
+}
+
+.fade-in-up {
+  opacity: 0; /* Il testo è inizialmente invisibile */
+  animation: fadeInUp 1.5s ease-out forwards; /* Durata e animazione */
+}
