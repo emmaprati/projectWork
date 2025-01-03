@@ -19,7 +19,7 @@
 
         <div id="int-bottoni">
             <a href="login.html"><button class="signup" role="button">Log In</button></a>
-            <a href="home.html"><button class="home" role="button">Homepene</button></a>
+            <a href="home.html"><button class="home" role="button">Home</button></a>
         </div>
 
     </div>
