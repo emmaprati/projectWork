@@ -1,11 +1,20 @@
+
 $(document).ready(function () {
   // Seleziona tutti gli elementi di testo e aggiungi l'animazione
+  animationScroll();
+  scrollToElement();
+});
+
+function animationScroll() {
   $('h1, h2, h3, p, span, div').each(function (index) {
     const element = $(this);
     setTimeout(function () {
       element.addClass('fade-in-up');
     }); // Ritardo progressivo per ogni elemento
   });
+}
+
+function scrollToElement() {
   document.querySelector('.btn-info .info').addEventListener('click', function () {
     const target = document.querySelector('.introduzione'); // Elemento verso cui scorrere
     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset; // Posizione dell'elemento
@@ -29,4 +38,4 @@ $(document).ready(function () {
     }
     requestAnimationFrame(animationScroll);
   });
-});
+}
