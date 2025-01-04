@@ -1,3 +1,4 @@
+/* CSS originale */
 * {
   background-color: #101728;
   font-family: 'codec pro extrabold';
@@ -20,7 +21,6 @@
   margin-left: 20px;
   margin-top: 10px;
   position: relative;
-  /* Necessario per posizionare il bagliore */
 }
 
 .int-title {
@@ -50,7 +50,6 @@
   margin-right: 150px;
   position: relative;
 }
-
 
 .login,
 .signup,
@@ -92,7 +91,6 @@
 .btn-info {
   display: flex;
   justify-content: space-between;
-
 }
 
 .info {
@@ -107,7 +105,6 @@
   animation: slide-up 1.4s ease-out;
   box-shadow: 0 0 15px #4d4bff, 0 0 30px #4d4bff;
 }
-
 
 .info:hover,
 .login:hover,
@@ -142,7 +139,9 @@
   margin-bottom: 150px;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .login:disabled,
 .signup:disabled {
@@ -158,15 +157,96 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px); /* Sposta il testo verso il basso */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Testo torna nella posizione originale */
+    transform: translateY(0);
   }
 }
 
 .fade-in-up {
-  opacity: 0; /* Il testo è inizialmente invisibile */
-  animation: fadeInUp 1.5s ease-out forwards; /* Durata e animazione */
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  .intestazione {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .int-logo {
+    margin: 10px 0;
+  }
+
+  .int-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  #int-bottoni {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 50px;
+    margin: 20px 0;
+  }
+
+  .main-logo {
+    margin: 0;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .info {
+    margin: 20px auto;
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .introduzione {
+    font-size: 32px;
+    margin-top: 100px;
+  }
+
+  .info-introduzione {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .int-title {
+    font-size: 24px;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .info {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .introduzione {
+    font-size: 24px;
+  }
+
+  .info-introduzione {
+    font-size: 16px;
+  }
 }
