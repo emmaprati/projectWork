@@ -183,7 +183,8 @@ a {
   }
 
   .int-title {
-    font-size: 32px;
+    font-size: 36px;
+    margin-left: 0;
     text-align: center;
   }
 
@@ -215,7 +216,7 @@ a {
   .info {
     margin: 20px auto;
     width: 80%;
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .introduzione {
@@ -231,7 +232,7 @@ a {
 
 @media (max-width: 480px) {
   .int-title {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .int-logo {
@@ -243,12 +244,12 @@ a {
   }
 
   .info {
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 20px;
   }
 
   .introduzione {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .info-introduzione {
@@ -270,7 +271,7 @@ a {
   }
 
   .int-title {
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
     margin: 10px 0;
   }
