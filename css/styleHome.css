@@ -328,3 +328,82 @@ a {
     text-align: center;
   }
 }
+
+/* Media query per risoluzione 1024x768 px */
+@media (max-width: 1024px) and (max-height: 768px) {
+  .intestazione {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .int-logo {
+    height: 60px;
+    margin-left: 10px;
+  }
+
+  .int-title {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  #int-bottoni {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+  }
+
+  .login,
+  .signup {
+    font-size: 14px;
+    padding: 8px 15px;
+    width: auto;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+
+  .main-logo {
+    max-width: 350px;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .btn-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: auto;
+    border-radius: 50px;
+  }
+
+  .introduzione {
+    font-size: 28px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .info-introduzione {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+}
