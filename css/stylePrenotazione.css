@@ -142,3 +142,25 @@ h2,p{
 .rotate svg:last-child{
     rotate:180deg;
 }
+
+.dropdown-btn svg{
+    transition: 200ms ease;
+}
+
+#sidebar .sub-menu a{
+    padding-left: 2em;
+
+}
+
+#toggle-btn{
+    margin-left:auto;
+    padding:1em;
+    border:none;
+    border-radius: .5em;
+    background:none;
+    cursor: pointer;
+
+    svg{
+        transition: rotate 160ms ease;
+    }
+}
