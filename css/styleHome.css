@@ -95,7 +95,6 @@
 
 .info {
   font-size: 1.2em;
-  padding: 15px 30px;
   color: #ffffff;
   background: linear-gradient(135deg, #4d4bff, #6a67ff);
   border: none;
@@ -116,7 +115,7 @@
 .info {
   margin-left: 16%;
   width:13%;
-  height: 70px;
+  height: 5%;
   font-size: 24px;
   padding: 25px 25px 25px 25px;
 }
