@@ -1,8 +1,12 @@
 /* CSS originale */
 * {
-  background-color: #101728;
+  /*background-color: #101728;*/
   font-family: 'codec pro extrabold';
   letter-spacing: 1px;
+}
+
+body {
+  background-color: #11121a;
 }
 
 @font-face {
